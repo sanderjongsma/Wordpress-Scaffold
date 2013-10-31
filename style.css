@@ -47,14 +47,24 @@ Version: 0.1
 /*==================================================*/
 /* Header
 /*==================================================*/
-	.header-wrap{ background-color: #363636; height: 150px; }
+	.header-wrap{ background-color: #363636; min-height: 150px; }
 	
 	/* Navbar */
-	.navbar{ float: right; margin-top: 63px; }
-	.navbar .menu li{ float: left; margin-right: 30px; line-height: 24px; list-style: none; border-right: 2px solid #4d4d4d; }
+	.navbar{ margin-top: 63px; border: none; }
+	.navbar .menu li{ line-height: 24px; list-style: none; }
 	.navbar .menu li:last-child{ border: none; }
 	.navbar .menu li a{ color: #fff; font-size: 20px; font-weight: 400; padding-right: 30px; }
 	.navbar .menu li a:hover{ text-decoration: none; color: #e74c3c; }
+	
+	.navbar button{ float: right; }
+	.navbar-collapse{ border: none; clear: both; box-shadow: none; float: left; padding: 0;}
+	.navbar-collapse.in,
+	.navbar-collapse.collapsing{ overflow: hidden;}
+
+	@media (min-width: 992px) {
+		.navbar{ float: right; }
+		.navbar .menu li{ float: left; margin-right: 30px; border-right: 2px solid #4d4d4d; }
+	}
 
 	.navbar .menu .current-menu-item a{ color: #e74c3c; }
 

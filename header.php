@@ -26,10 +26,9 @@
 			<div class="header">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4">
+
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"></a>
-						</div>
-						<div class="col-md-8">
+
 							<nav class="navbar" role="navigation">
 				  				<!-- Brand and toggle get grouped for better mobile display -->
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -47,7 +46,7 @@
 										'theme_location'	=> 'primary',
 										'container_class'	=> 'primary-menu-container menu-container',
 										'container_id'		=> 'primary-menu-container',
-										'items_wrap'      	=> '<ul id="%1$s" class="%2$s cleared">%3$s</ul>',
+										'items_wrap'      	=> '<ul id="%1$s" class="%2$s">%3$s</ul>',
 										'depth'           	=> 0,
 										'walker'         	=> ''
 									) ); 
@@ -58,8 +57,7 @@
 									?>
 				  				</div>
 							</nav>
-							
-						</div>
+
 					</div>
 					
 					

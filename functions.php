@@ -19,6 +19,7 @@
 		include( 'includes/walkers/walker-comment.php' );
 
 		include( 'includes/widgets/widget.php' );
+		include( 'includes/content/shortcodes.php' );
 
 		// Textdomain
 		load_theme_textdomain( 'scaffold', get_template_directory() . '/languages' );
