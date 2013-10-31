@@ -10,48 +10,63 @@ Version: 0.1
 /*==================================================*/
 /* Base
 /*==================================================*/
+
+	/* Body */
+	@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+	
+	body{ font-family: "Varela Round", Arial, sans-serif; font-size: 16px; color: #333; }
 	
 	/* Sticky footer */
 	html, body, .wrapper { height: 100%; margin: 0; padding: 0; }
 	body > .wrapper { height: auto; min-height: 100%; }
 
 	.wrapper{ }
-	.push{ padding-bottom: 150px; }
-	.footer-wrap{ position: relative; margin-top: -150px; height: 150px; clear: both; }
+	.push{ padding-bottom: 50px; }
 
 	/* Clears */
 	.clear{ clear: both; }
 	.cleared:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
 	/* Headers */
-	h1, h2, h3, h4, h5, h6{ margin-top: 0; }
-	h1{}
-	h2{}
-	h3{}
-	h4{}
-	h5{}
-	h6{}
+	h1, h2, h3, h4, h5, h6{ margin-top: 0; font-family: "Varela Round"; font-weight: 600; text-shadow: rgba(0, 0, 0, .01) 0 0 1px; }
+	h1{ font-size: 3em; }
+	h2{ font-size: 2.5em; }
+	h3{ font-size: 2em; }
+	h4{ font-size: 1.5em; }
+	h5{ font-size: 1.250em; }
+	h6{ font-size: 1em; }
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ font-weight: 700; color: #e74c3c; }
 
 
 /*==================================================*/
 /* Structure
 /*==================================================*/
-	
-	
+	body .page{ padding: 30px 0;}
 
 /*==================================================*/
 /* Header
 /*==================================================*/
+	.header-wrap{ background-color: #363636; height: 150px; }
+	
+	/* Navbar */
+	.navbar{ float: right; margin-top: 63px; }
+	.navbar .menu li{ float: left; margin-right: 30px; line-height: 24px; list-style: none; border-right: 2px solid #4d4d4d; }
+	.navbar .menu li:last-child{ border: none; }
+	.navbar .menu li a{ color: #fff; font-size: 20px; font-weight: 400; padding-right: 30px; }
+	.navbar .menu li a:hover{ text-decoration: none; color: #e74c3c; }
 
+	.navbar .menu .current-menu-item a{ color: #e74c3c; }
+
+	/* Navbar toggle */
+	.navbar-toggle{ border: 2px solid #e74c3c; }
+	.navbar-toggle .icon-bar{ background-color: #e74c3c; }
 
 
 /*==================================================*/
 /* Footer
 /*==================================================*/
-
-
+	.footer-wrap{ position: relative; margin-top: -50px; height: 50px; clear: both; background-color: #363636; color: #fff; padding: 14px 0 0 0; }
 
 /*==================================================*/
 /* Content

@@ -12,6 +12,7 @@
 	function scaffold_setup()
 	{
 		// Includes
+		include( 'includes/cuztom/cuztom.php' );
 		include( 'includes/customize/customizer.php' );
 
 		include( 'includes/walkers/walker-menu.php' );
@@ -286,6 +287,16 @@
 			'description'	=> __( 'Just a sidebar', 'scaffold' ),
 			'before_widget' => '<li id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</li>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		) );
+
+		register_sidebar( array(
+			'name' 			=> 'right sidebar',
+			'id'			=> 'right-sidebar',
+			'description'	=> __( 'Right Sidebar', 'scaffold' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
 		) );

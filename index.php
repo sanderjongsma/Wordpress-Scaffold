@@ -1,23 +1,25 @@
 <?php get_header(); ?>
 
-	<div class="content-wrap">
-		
-		<!-- #content -->
-		<div class="content">
+	<div class="container page">
+		<div class="row">
 			
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<!-- #content -->
+			<div class="content col-md-8">
 				
-				<h2><?php the_title(); ?></h2>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					
+					<!-- <h2><?php the_title(); ?></h2> -->
+					
+					<?php the_content(); ?>
+					
+				<?php endwhile; endif; ?>
 				
-				<?php the_content(); ?>
-				
-			<?php endwhile; endif; ?>
-			
-		</div>
-		<!-- /content -->
+			</div>
+			<!-- /content -->
 		
 		<?php get_sidebar(); ?>
 		
+		</div>
 	</div>
 	
 <?php get_footer(); ?>
