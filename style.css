@@ -36,7 +36,7 @@ Version: 0.1
 	h5{ font-size: 1.250em; }
 	h6{ font-size: 1em; }
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ font-weight: 700; color: #e74c3c; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ font-weight: 700; color: #1686AA; }
 
 
 /*==================================================*/
@@ -47,30 +47,33 @@ Version: 0.1
 /*==================================================*/
 /* Header
 /*==================================================*/
-	.header-wrap{ background-color: #363636; min-height: 150px; }
+	.header-wrap{ background-color: #2d2d2d; min-height: 150px; }
+	.header .logo{ display: block; height: 30px; position: relative; top: 30px; width: 80%; }
 	
 	/* Navbar */
-	.navbar{ margin-top: 63px; border: none; }
-	.navbar .menu li{ line-height: 24px; list-style: none; }
-	.navbar .menu li:last-child{ border: none; }
-	.navbar .menu li a{ color: #fff; font-size: 20px; font-weight: 400; padding-right: 30px; }
-	.navbar .menu li a:hover{ text-decoration: none; color: #e74c3c; }
+	.navbar{ top: 21px; border: none; position: relative; }
+	.navbar .menu li{ list-style: none; margin-right: 30px; margin-bottom: 10px; }
+	.navbar .menu li a{ color: #fff; font-size: 22px; font-weight: normal; }
+	.navbar .menu li a:hover{ text-decoration: none; color: #6ec8c7; }
+	.navbar .menu .current-menu-item a{ color: #6ec8c7; }
 	
-	.navbar button{ float: right; }
-	.navbar-collapse{ border: none; clear: both; box-shadow: none; float: left; padding: 0;}
+	.navbar-collapse{ border: none; box-shadow: none; margin: 100px 0 0 -22px; padding-left: 0; }
 	.navbar-collapse.in,
-	.navbar-collapse.collapsing{ overflow: hidden;}
+	.navbar-collapse.collapsing{}
 
 	@media (min-width: 992px) {
 		.navbar{ float: right; }
-		.navbar .menu li{ float: left; margin-right: 30px; border-right: 2px solid #4d4d4d; }
+		.navbar .menu li{ float: left; }
+		.navbar-collapse{ margin: 0; }
 	}
 
-	.navbar .menu .current-menu-item a{ color: #e74c3c; }
+	@media (min-width: 768px) {
+		.header .logo{ top: 21px; }
+	}
 
 	/* Navbar toggle */
-	.navbar-toggle{ border: 2px solid #e74c3c; }
-	.navbar-toggle .icon-bar{ background-color: #e74c3c; }
+	.navbar-toggle{ background-color: #6ec8c7; float: right; }
+	.navbar-toggle .icon-bar{ background-color: #fff; }
 
 
 /*==================================================*/

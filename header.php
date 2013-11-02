@@ -13,8 +13,6 @@
 	
 	<?php wp_head(); ?>
 
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
 </head>
 
 <body <?php body_class( get_theme_mod('scaffold_sidebar') ); ?>>
@@ -27,7 +25,7 @@
 				<div class="container">
 					<div class="row">
 
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" class="img-responsive"></a>
 
 							<nav class="navbar" role="navigation">
 				  				<!-- Brand and toggle get grouped for better mobile display -->
