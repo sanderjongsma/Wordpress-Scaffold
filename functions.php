@@ -20,6 +20,7 @@
 
 		include( 'includes/widgets/widget.php' );
 		include( 'includes/content/shortcodes.php' );
+		include( 'includes/content/content-types.php' );
 
 		// Textdomain
 		load_theme_textdomain( 'scaffold', get_template_directory() . '/languages' );

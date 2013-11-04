@@ -14,7 +14,7 @@ Version: 0.1
 	/* Body */
 	@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 	
-	body{ font-family: "Varela Round", Arial, sans-serif; font-size: 16px; color: #333; }
+	body{ font-family: "Varela Round", Arial, sans-serif; font-size: 16px; color: #333; background: #f1f1f1 url('assets/images/gray_bg.gif') repeat; }
 	
 	/* Sticky footer */
 	html, body, .wrapper { height: 100%; margin: 0; padding: 0; }
@@ -28,21 +28,21 @@ Version: 0.1
 	.cleared:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
 	/* Headers */
-	h1, h2, h3, h4, h5, h6{ margin-top: 0; font-family: "Varela Round"; font-weight: 600; text-shadow: rgba(0, 0, 0, .01) 0 0 1px; }
-	h1{ font-size: 3em; }
+	h1, h2, h3, h4, h5, h6{ margin-top: 0; font-family: "Varela Round"; font-weight: 600; }
+	h1{ font-size: 3em; margin-bottom: 50px; }
 	h2{ font-size: 2.5em; }
 	h3{ font-size: 2em; }
 	h4{ font-size: 1.5em; }
 	h5{ font-size: 1.250em; }
 	h6{ font-size: 1em; }
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ font-weight: 700; color: #1686AA; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{ font-weight: 600; color: #6ec8c7; }
 
 
 /*==================================================*/
 /* Structure
 /*==================================================*/
-	body .page{ padding: 30px 0;}
+	body .page{ padding: 50px 0;}
 
 /*==================================================*/
 /* Header
@@ -58,8 +58,6 @@ Version: 0.1
 	.navbar .menu .current-menu-item a{ color: #6ec8c7; }
 	
 	.navbar-collapse{ border: none; box-shadow: none; margin: 100px 0 0 -22px; padding-left: 0; }
-	.navbar-collapse.in,
-	.navbar-collapse.collapsing{}
 
 	@media (min-width: 992px) {
 		.navbar{ float: right; }
@@ -84,6 +82,39 @@ Version: 0.1
 /*==================================================*/
 /* Content
 /*==================================================*/
+	/* Buttons */
+	.wabbr-button{ 
+		height: 50px;
+		padding: 13px 30px;
+		display: inline-block;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px; 
+		font-weight: normal;
+		font-size: 18px;
+		margin: 10px 10px 10px 0;
+		-webkit-transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+		-o-transition: all .3s ease-out;
+	}
 
+	.btn-blue{ background-color: #6ec8c7; color: #fff; }
+	.btn-blue:hover{ background-color: #44938e; color: #fff; text-decoration: none; }
 
+	.btn-green{ background-color: #c6de65; color: #fff; }
+	.btn-green:hover{ background-color: #8a9d43; color: #fff; text-decoration: none; }
 
+	.btn-red{ background-color: #f5696c; color: #fff; }
+	.btn-red:hover{ background-color: #af4454; color: #fff; text-decoration: none; }
+
+	.btn-yellow{ background-color: #ffd200; color: #fff; }
+	.btn-yellow:hover{ background-color: #b79800; color: #fff; text-decoration: none; }
+
+	/* hr */
+	hr{ height: 2px; margin: 0px; border: none; background: #ddd; -moz-box-shadow: 0px 1px 0px #fff; -webkit-box-shadow: 0px 1px 0px #fff; box-shadow: 0px 1px 0px #fff; }
+
+/*==================================================*/
+/* Portfolio
+/*==================================================*/
+
+	.portfolio-thumb{ margin-bottom: 50px; min-height: 195px; max-height: 210px; overflow: hidden; }

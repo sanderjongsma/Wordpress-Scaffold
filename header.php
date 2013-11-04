@@ -25,7 +25,8 @@
 				<div class="container">
 					<div class="row">
 
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" class="img-responsive"></a>
+							<!-- <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="logo" class="img-responsive"></a> -->
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo"><img src="http://placehold.it/400x100" alt="logo" class="img-responsive"></a>
 
 							<nav class="navbar" role="navigation">
 				  				<!-- Brand and toggle get grouped for better mobile display -->
